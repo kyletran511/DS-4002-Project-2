@@ -1,18 +1,19 @@
 # DS4002 Project 2: Anomaly Detection of Parking Ticket Issuance in Charlottesville Between 1999 and 2025
 
-This projects aims to perform an anomaly detectection on a parking ticket dataset issued by the City of Charlottesville between the years 1999 and 2025 in order to identify factors that influence the frequescy of parking tickets issued at a given time. 
+This project aims to perform an anomaly detectection on a parking ticket dataset issued by the City of Charlottesville between the years 1999 and 2025 in order to identify factors that influence the frequescy of parking tickets issued at a given time. 
 
 ## Section 1: 
 We used the Isolation Forest Model to identify the anomalies (outliers) in our dataset.
 
 
+## Section 2
 
-Section 1: Software and platform section
-The type(s) of software you used for the project.
-The names of any add-on packages that need to be installed with the software.
-The platform (e.g., Windows, Mac, or Linux) you used.
-Section 2: A Map of your documentation.
-In this section, you should provide an outline or tree illustrating the hierarchy of folders and subfolders contained in your Project Folder, and listing the files stored in each folder or subfolder.
+📦 Project_Name
+│-- 📂 DATA        
+│-- 📂 SCRIPTS    
+│-- 📂 OUTPUT      
+│-- 📜 README.md    
+│-- 📜 LICENSE      
 
 ## Section 3: 
 1. Preprocess the Data
