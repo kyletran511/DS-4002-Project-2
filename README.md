@@ -9,12 +9,22 @@ We used the Isolation Forest Model to identify the anomalies (outliers) in our d
 ## Section 2
 
 📦 DS 4002 Project 2
-
-│-- 📂 DATA        
-│-- 📂 SCRIPTS    
-│-- 📂 OUTPUT      
-│-- 📜 README.md    
-│-- 📜 LICENSE      
+│-- 📂 DATA/          
+│   ├── Parking_Tickets.csv.zip  
+│
+│-- 📂 SCRIPTS       
+│
+│-- 📂 OUTPUT/             
+│   ├── Plots/
+│   │   ├── Heatmap of tickets issued by location.png
+│   │   ├── Heatmap of tickets issued by hour and day of the week.png
+│   │   ├── Number of tickets issued over time.png
+│   │   ├── Number of tickets issued per year.png
+│   │   ├── Percentage of tickets issued by day of week.png
+│   │   ├── Percentage of tickets issued by season.png
+│
+│-- 📜 README.md           
+│-- 📜 LICENSE             
 
 ## Section 3: 
 1. Preprocess the Data
