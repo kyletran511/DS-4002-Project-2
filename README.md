@@ -8,7 +8,8 @@ We used the Isolation Forest Model to identify the anomalies (outliers) in our d
 
 ## Section 2
 
-📦 Project_Name
+📦 DS 4002 Project 2
+
 │-- 📂 DATA        
 │-- 📂 SCRIPTS    
 │-- 📂 OUTPUT      
