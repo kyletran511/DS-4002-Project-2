@@ -9,6 +9,7 @@ We used the Isolation Forest Model to identify the anomalies (outliers) in our d
 ## Section 2
 
 📦 DS 4002 Project 2
+
 │-- 📂 DATA/          
 │   ├── Parking_Tickets.csv.zip  
 │
