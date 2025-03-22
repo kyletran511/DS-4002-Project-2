@@ -19,11 +19,12 @@ The platform used for development was Google Colab via a juptyer notebook
 
 ```
 │── 📂 DATA 
-    ├── 📂 initial_data 
-      ├── Parking_Tickets.csv.zip
+    ├── Data Appendix.pdf 
     ├── 📂 analyzed_data 
-      ├── cleaned_data.zip     
-      ├── Data Appendix.pdf    
+      ├── cleaned_parking_tickets.zip
+      ├── trained_data.zip     
+    ├── 📂 initial_data 
+      ├── Parking_Tickets_Original.csv.zip 
 │── 📂 OUTPUT
    ├── 📂Plots
       ├── Heatmap of tickets issued by location.png
