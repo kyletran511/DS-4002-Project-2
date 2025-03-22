@@ -1,59 +1,55 @@
 # DS4002 Project 2: Anomaly Detection of Parking Ticket Issuance in Charlottesville Between 1999 and 2025
 
-This project aims to perform an anomaly detectection on a parking ticket dataset issued by the City of Charlottesville between the years 1999 and 2025 in order to identify factors that influence the frequescy of parking tickets issued at a given time. 
+## Overview:
+This project aims to perform an anomaly detectection on a parking ticket dataset issued by the City of Charlottesville between the years 1999 and 2025 in order to identify factors that influence the frequency of parking tickets issued at a given time. 
 
-## Section 1: 
-We used the Isolation Forest Model to identify the anomalies (outliers) in our dataset.
+## Software and Platform Used
+Python was used for data processing, analysis, and visualization.
+some of the packages we used: 
+- pandas – For data manipulation and preprocessing.
+- matplotlib & seaborn – For data visualization.
+- Isolation Forest (from scikit-learn) – For anomaly detection
+- ttest_ind - For statistical analysis (Mann Whitney U test)
 
+The platform used for development was Google Colab via a juptyer notebook
 
-## Section 2
+## Documentation Map
 
 📦 DS 4002 Project 2
 
-│-- 📂 DATA/          
-│   ├── Parking_Tickets.csv.zip  
-│
-│-- 📂 SCRIPTS       
-│
-│-- 📂 OUTPUT/             
-│   ├── Plots/
-│   │   ├── Heatmap of tickets issued by location.png
-│   │   ├── Heatmap of tickets issued by hour and day of the week.png
-│   │   ├── Number of tickets issued over time.png
-│   │   ├── Number of tickets issued per year.png
-│   │   ├── Percentage of tickets issued by day of week.png
-│   │   ├── Percentage of tickets issued by season.png
-│
-│-- 📜 README.md           
-│-- 📜 LICENSE             
+```
+│── 📂 DATA 
+    ├── 📂 initial_data 
+      ├── Parking_Tickets.csv.zip
+    ├── 📂 analyzed_data 
+      ├── cleaned_data.zip     
+      ├── Data Appendix.pdf    
+│── 📂 OUTPUT
+   ├── 📂Plots
+      ├── Heatmap of tickets issued by location.png
+      ├── Heatmap of tickets issued by hour and day of the week.png
+      ├── Number of tickets issued over time.png
+      ├── Number of tickets issued per year.png
+      ├── Percentage of tickets issued by day of week.png
+      ├── Percentage of tickets issued by season.png
+│── 📂 SCRIPTS
+    ├── DS 4002 Project 2.ipynb
+│── LICENSE 
+│── README.md     
+```     
+## Section 3: Instructions for Reproducing Results
+To reproduce the results of this study, follow the steps below:
 
-## Section 3: 
-1. Preprocess the Data
-   
-  a. Download data from City of Charlottesville website
-  b. Remove irrelevant columns and null entries
-  c. Remove whitespace from string columns & uppercase strings for uniform formatting
-  d. Clean entries with multiple street names that are the same
-  e. Filter entries to be tickets issued in 2025 or earlier (for date validity)
-  f. Remove entries that have the same Ticket Number since this should be unique
-  g. Convert the DateIssued and TimeIssued features into datetime objects
-  h. Remove entries with invalid state abbreviations 
-
-3. Preparing Features + Feature Engineering
-  a. In preparation for model analysis, feature engineering will be done
-  b. More specifically:
-    i. We plan to normalize the numerical features and autoencode the categorical variables so the model can better interpret those features
-    ii. We may also create new features such as the day of the week the ticket was issued so the model can better interpret the data
-   
-4. Anomaly Detection Analysis
-  a. After preparation of features and feature engineering, we will build one model. For the Isolation Forest model, we used the scikit-learn library
-  b. After building the model, we will finetune the models based on the hyperparameter:
-    i. For Isolation Forest, this includes the contamination parameter, which represents the expected portion of anomalies in the data
-    ii. We evaluated the model using metrics of Recall, Precision, and F1-Score
-   
-5. Hypothesis Testing
-  a. After fine tuning the model, we will evaluate whether the model can identify anomalies with a significant difference by performing a two-sample t-test
-  More specifically, we will calculate the frequency rate of tickets issued in normal and anomaly periods and compare them using a t-test
-  If p-value < 0.05, anomalies are statistically different (reject H₀).
-  If p-value > 0.05, no strong evidence of meaningful anomalies (fail to reject H₀).
-
+### **1. Clone the Repository**
+First, clone this repository to your local machine. In order to that, run this command
+```
+git clone https://github.com/kyletran511/DS-4002-Project-2.git
+```
+### **2. Run the Script**
+- Go to the SCRIPTS directory and find the DS 4002 Project 2.ipynb
+- After finding the jupyter notebook, you can simply run it to reproduce all the results of this project
+- There are comments throughout the script to describe how the code works
+```
+│── 📂 SCRIPTS
+    ├── DS 4002 Project 2.ipynb
+```
