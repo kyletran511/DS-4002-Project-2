@@ -9,7 +9,7 @@ some of the packages we used:
 - pandas – For data manipulation and preprocessing.
 - matplotlib & seaborn – For data visualization.
 - Isolation Forest (from scikit-learn) – For anomaly detection
-- ttest_ind - For statistical analysis (Mann Whitney U test)
+- ttest_ind - For statistical analysis (two sample t-test)
 
 The platform used for development was Google Colab via a juptyer notebook
 
@@ -31,8 +31,12 @@ The platform used for development was Google Colab via a juptyer notebook
       ├── Heatmap of tickets issued by hour and day of the week.png
       ├── Number of tickets issued over time.png
       ├── Number of tickets issued per year.png
+      ├── Percentage of Anomaly Tickets Issued Per Year.png
       ├── Percentage of tickets issued by day of week.png
       ├── Percentage of tickets issued by season.png
+      ├── SHAP Bar Plot.png
+      ├── SHAP Values Beeswarm Plot.png
+      ├── Time Series of Parking Tickets Issued Per Month (Anomaly vs Normal).png
 │── 📂 SCRIPTS
     ├── DS 4002 Project 2.ipynb
 │── LICENSE 
