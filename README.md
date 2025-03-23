@@ -38,7 +38,7 @@ The platform used for development was Google Colab via a juptyer notebook
       ├── SHAP Values Beeswarm Plot.png
       ├── Time Series of Parking Tickets Issued Per Month (Anomaly vs Normal).png
 │── 📂 SCRIPTS
-    ├── DS 4002 Project 2.ipynb
+    ├── DS_4002_Project_2.ipynb
 │── DS 4002 Project 2 - #1 Group Presentation.pdf
 │── LICENSE 
 │── README.md     
